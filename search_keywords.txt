@@ -1,0 +1,33 @@
+*** Settings ***
+Library    Selenium2Library
+
+Test Setup    Open Browser To Search Page
+Test Teardown    Close Browser    
+
+*** Variables ***
+${URL}        https://www.google.com
+${BROWSER}    gc
+
+*** Test Cases ***
+Search Siam-Chamnankit
+    ใส่คำค้น    siam chamnankit
+    Result Page Should Contain    sprint3r.com
+    
+
+Search Sprint3r
+    ใส่คำค้น    sprint3r    
+    Result Page Should Contain    SPRINT3R [n.] (ซพรินเทอร์)
+    
+
+*** Keywords ***
+Open Browser To Search Page
+    Open Browser    ${URL}    ${BROWSER}
+
+ ใส่คำค้น
+    [Arguments]    ${keyword}
+    Input Text    gbqfq    ${keyword}
+    Click Button    gbqfb
+
+Result Page Should Contain
+    [Arguments]    ${expected_result}
+    Wait Until Page Contains    ${expected_result}

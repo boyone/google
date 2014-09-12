@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140912 17:18:42.260" generator="Robot 2.8.5 (Python 2.7.5 on darwin)">
+<suite source="/Users/boyone/workspaces/robot/tpse2014" id="s1" name="Tpse2014">
+<suite source="/Users/boyone/workspaces/robot/tpse2014/search_keywords.txt" id="s1-s1" name="Search Keywords">
+<test id="s1-s1-t1" name="Search Siam-Chamnankit">
+<kw type="setup" name="Open Browser To Search Page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20140912 17:18:42.422" level="INFO">Opening browser 'gc' to base url 'https://www.google.com'</msg>
+<status status="PASS" endtime="20140912 17:18:49.220" starttime="20140912 17:18:42.422"></status>
+</kw>
+<status status="PASS" endtime="20140912 17:18:49.221" starttime="20140912 17:18:42.421"></status>
+</kw>
+<kw type="kw" name="ใส่คำค้น">
+<doc></doc>
+<arguments>
+<arg>siam chamnankit</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>gbqfq</arg>
+<arg>${keyword}</arg>
+</arguments>
+<msg timestamp="20140912 17:18:49.222" level="INFO">Typing text 'siam chamnankit' into text field 'gbqfq'</msg>
+<status status="PASS" endtime="20140912 17:18:49.349" starttime="20140912 17:18:49.221"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>gbqfb</arg>
+</arguments>
+<msg timestamp="20140912 17:18:49.350" level="INFO">Clicking button 'gbqfb'.</msg>
+<status status="PASS" endtime="20140912 17:18:49.407" starttime="20140912 17:18:49.350"></status>
+</kw>
+<status status="PASS" endtime="20140912 17:18:49.407" starttime="20140912 17:18:49.221"></status>
+</kw>
+<kw type="kw" name="Result Page Should Contain">
+<doc></doc>
+<arguments>
+<arg>sprint3r.com</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" endtime="20140912 17:18:50.264" starttime="20140912 17:18:49.408"></status>
+</kw>
+<status status="PASS" endtime="20140912 17:18:50.264" starttime="20140912 17:18:49.408"></status>
+</kw>
+<kw type="teardown" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140912 17:18:50.326" starttime="20140912 17:18:50.265"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140912 17:18:50.326" critical="yes" starttime="20140912 17:18:42.421"></status>
+</test>
+<test id="s1-s1-t2" name="Search Sprint3r">
+<kw type="setup" name="Open Browser To Search Page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20140912 17:18:50.328" level="INFO">Opening browser 'gc' to base url 'https://www.google.com'</msg>
+<status status="PASS" endtime="20140912 17:18:56.287" starttime="20140912 17:18:50.328"></status>
+</kw>
+<status status="PASS" endtime="20140912 17:18:56.288" starttime="20140912 17:18:50.327"></status>
+</kw>
+<kw type="kw" name="ใส่คำค้น">
+<doc></doc>
+<arguments>
+<arg>sprint3r</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>gbqfq</arg>
+<arg>${keyword}</arg>
+</arguments>
+<msg timestamp="20140912 17:18:56.289" level="INFO">Typing text 'sprint3r' into text field 'gbqfq'</msg>
+<status status="PASS" endtime="20140912 17:18:56.390" starttime="20140912 17:18:56.288"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>gbqfb</arg>
+</arguments>
+<msg timestamp="20140912 17:18:56.391" level="INFO">Clicking button 'gbqfb'.</msg>
+<status status="PASS" endtime="20140912 17:18:56.443" starttime="20140912 17:18:56.391"></status>
+</kw>
+<status status="PASS" endtime="20140912 17:18:56.444" starttime="20140912 17:18:56.288"></status>
+</kw>
+<kw type="kw" name="Result Page Should Contain">
+<doc></doc>
+<arguments>
+<arg>SPRINT3R [n.] (ซพรินเทอร์)</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" endtime="20140912 17:18:57.180" starttime="20140912 17:18:56.445"></status>
+</kw>
+<status status="PASS" endtime="20140912 17:18:57.180" starttime="20140912 17:18:56.444"></status>
+</kw>
+<kw type="teardown" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140912 17:18:57.239" starttime="20140912 17:18:57.180"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140912 17:18:57.239" critical="yes" starttime="20140912 17:18:50.327"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140912 17:18:57.240" starttime="20140912 17:18:42.288"></status>
+</suite>
+<suite source="/Users/boyone/workspaces/robot/tpse2014/search_page.txt" id="s1-s2" name="Search Page">
+<test id="s1-s2-t1" name="Search Siam-Chamnankit">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://www.google.com</arg>
+</arguments>
+<msg timestamp="20140912 17:18:57.245" level="INFO">Opening browser 'firefox' to base url 'https://www.google.com'</msg>
+<status status="PASS" endtime="20140912 17:19:02.802" starttime="20140912 17:18:57.244"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>gbqfq</arg>
+<arg>siam chamnankit</arg>
+</arguments>
+<msg timestamp="20140912 17:19:02.803" level="INFO">Typing text 'siam chamnankit' into text field 'gbqfq'</msg>
+<status status="PASS" endtime="20140912 17:19:03.319" starttime="20140912 17:19:02.802"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>gbqfb</arg>
+</arguments>
+<msg timestamp="20140912 17:19:03.320" level="INFO">Clicking button 'gbqfb'.</msg>
+<status status="PASS" endtime="20140912 17:19:03.390" starttime="20140912 17:19:03.320"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>sprint3r.com</arg>
+</arguments>
+<status status="PASS" endtime="20140912 17:19:04.365" starttime="20140912 17:19:03.391"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140912 17:19:04.403" starttime="20140912 17:19:04.365"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140912 17:19:04.403" critical="yes" starttime="20140912 17:18:57.244"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140912 17:19:04.404" starttime="20140912 17:18:57.241"></status>
+</suite>
+<suite source="/Users/boyone/workspaces/robot/tpse2014/search_pages.txt" id="s1-s3" name="Search Pages">
+<test id="s1-s3-t1" name="Search Siam-Chamnankit">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://www.google.com</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20140912 17:19:04.409" level="INFO">Opening browser 'gc' to base url 'https://www.google.com'</msg>
+<status status="PASS" endtime="20140912 17:19:09.391" starttime="20140912 17:19:04.409"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>gbqfq</arg>
+<arg>siam chamnankit</arg>
+</arguments>
+<msg timestamp="20140912 17:19:09.391" level="INFO">Typing text 'siam chamnankit' into text field 'gbqfq'</msg>
+<status status="PASS" endtime="20140912 17:19:09.517" starttime="20140912 17:19:09.391"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>gbqfb</arg>
+</arguments>
+<msg timestamp="20140912 17:19:09.518" level="INFO">Clicking button 'gbqfb'.</msg>
+<status status="PASS" endtime="20140912 17:19:09.598" starttime="20140912 17:19:09.518"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>sprint3r.com</arg>
+</arguments>
+<status status="PASS" endtime="20140912 17:19:10.295" starttime="20140912 17:19:09.598"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140912 17:19:10.354" starttime="20140912 17:19:10.295"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140912 17:19:10.354" critical="yes" starttime="20140912 17:19:04.408"></status>
+</test>
+<test id="s1-s3-t2" name="Search Sprint3r">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://www.google.com</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20140912 17:19:10.356" level="INFO">Opening browser 'gc' to base url 'https://www.google.com'</msg>
+<status status="PASS" endtime="20140912 17:19:19.869" starttime="20140912 17:19:10.355"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>gbqfq</arg>
+<arg>sprint3r</arg>
+</arguments>
+<msg timestamp="20140912 17:19:19.870" level="INFO">Typing text 'sprint3r' into text field 'gbqfq'</msg>
+<status status="PASS" endtime="20140912 17:19:19.977" starttime="20140912 17:19:19.870"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>gbqfb</arg>
+</arguments>
+<msg timestamp="20140912 17:19:19.978" level="INFO">Clicking button 'gbqfb'.</msg>
+<status status="PASS" endtime="20140912 17:19:20.034" starttime="20140912 17:19:19.978"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>SPRINT3R [n.] (ซพรินเทอร์)</arg>
+</arguments>
+<status status="PASS" endtime="20140912 17:19:21.100" starttime="20140912 17:19:20.035"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140912 17:19:21.163" starttime="20140912 17:19:21.101"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140912 17:19:21.163" critical="yes" starttime="20140912 17:19:10.355"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140912 17:19:21.164" starttime="20140912 17:19:04.405"></status>
+</suite>
+<suite source="/Users/boyone/workspaces/robot/tpse2014/search_template.txt" id="s1-s4" name="Search Template">
+<test id="s1-s4-t1" name="Search Sprint3r">
+<kw type="kw" name="Search Page">
+<doc></doc>
+<arguments>
+<arg>siam chamnankit</arg>
+<arg>sprint3r.com</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://www.google.com</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20140912 17:19:21.168" level="INFO">Opening browser 'gc' to base url 'https://www.google.com'</msg>
+<status status="PASS" endtime="20140912 17:20:01.969" starttime="20140912 17:19:21.168"></status>
+</kw>
+<kw type="kw" name="Search By Keyword">
+<doc></doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>gbqfq</arg>
+<arg>${keyword}</arg>
+</arguments>
+<msg timestamp="20140912 17:20:01.970" level="INFO">Typing text 'siam chamnankit' into text field 'gbqfq'</msg>
+<status status="PASS" endtime="20140912 17:20:02.123" starttime="20140912 17:20:01.970"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>gbqfb</arg>
+</arguments>
+<msg timestamp="20140912 17:20:02.124" level="INFO">Clicking button 'gbqfb'.</msg>
+<status status="PASS" endtime="20140912 17:20:02.187" starttime="20140912 17:20:02.124"></status>
+</kw>
+<status status="PASS" endtime="20140912 17:20:02.188" starttime="20140912 17:20:01.969"></status>
+</kw>
+<kw type="kw" name="Result Page Should Contain">
+<doc></doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" endtime="20140912 17:20:02.691" starttime="20140912 17:20:02.188"></status>
+</kw>
+<status status="PASS" endtime="20140912 17:20:02.692" starttime="20140912 17:20:02.188"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140912 17:20:02.750" starttime="20140912 17:20:02.692"></status>
+</kw>
+<status status="PASS" endtime="20140912 17:20:02.750" starttime="20140912 17:19:21.168"></status>
+</kw>
+<kw type="kw" name="Search Page">
+<doc></doc>
+<arguments>
+<arg>sprint3r</arg>
+<arg>SPRINT3R [n.] (ซพรินเทอร์)</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://www.google.com</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20140912 17:20:02.751" level="INFO">Opening browser 'gc' to base url 'https://www.google.com'</msg>
+<status status="PASS" endtime="20140912 17:20:08.328" starttime="20140912 17:20:02.751"></status>
+</kw>
+<kw type="kw" name="Search By Keyword">
+<doc></doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>gbqfq</arg>
+<arg>${keyword}</arg>
+</arguments>
+<msg timestamp="20140912 17:20:08.329" level="INFO">Typing text 'sprint3r' into text field 'gbqfq'</msg>
+<status status="PASS" endtime="20140912 17:20:08.584" starttime="20140912 17:20:08.329"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>gbqfb</arg>
+</arguments>
+<msg timestamp="20140912 17:20:08.584" level="INFO">Clicking button 'gbqfb'.</msg>
+<status status="PASS" endtime="20140912 17:20:08.647" starttime="20140912 17:20:08.584"></status>
+</kw>
+<status status="PASS" endtime="20140912 17:20:08.647" starttime="20140912 17:20:08.328"></status>
+</kw>
+<kw type="kw" name="Result Page Should Contain">
+<doc></doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" endtime="20140912 17:20:09.134" starttime="20140912 17:20:08.647"></status>
+</kw>
+<status status="PASS" endtime="20140912 17:20:09.135" starttime="20140912 17:20:08.647"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140912 17:20:09.195" starttime="20140912 17:20:09.135"></status>
+</kw>
+<status status="PASS" endtime="20140912 17:20:09.195" starttime="20140912 17:20:02.750"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140912 17:20:09.195" critical="yes" starttime="20140912 17:19:21.167"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140912 17:20:09.196" starttime="20140912 17:19:21.165"></status>
+</suite>
+<suite source="/Users/boyone/workspaces/robot/tpse2014/template.txt" id="s1-s5" name="Template">
+<test id="s1-s5-t1" name="Valid Login Acceptance Rule">
+<kw type="kw" name="Valid Login">
+<doc></doc>
+<arguments>
+<arg>demo</arg>
+<arg>mode</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost:7272/html</arg>
+</arguments>
+<msg timestamp="20140912 17:20:09.201" level="INFO">Opening browser 'firefox' to base url 'http://localhost:7272/html'</msg>
+<status status="PASS" endtime="20140912 17:20:11.101" starttime="20140912 17:20:09.200"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username_field</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140912 17:20:11.102" level="INFO">Typing text 'demo' into text field 'username_field'</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140912 17:20:11.252" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140912 17:20:11.252" starttime="20140912 17:20:11.110"></status>
+</kw>
+<msg timestamp="20140912 17:20:11.256" level="FAIL">ValueError: Element locator 'username_field' did not match any elements.</msg>
+<status status="FAIL" endtime="20140912 17:20:11.256" starttime="20140912 17:20:11.101"></status>
+</kw>
+<kw type="teardown" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140912 17:20:11.295" starttime="20140912 17:20:11.256"></status>
+</kw>
+<status status="FAIL" endtime="20140912 17:20:11.296" starttime="20140912 17:20:09.200"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140912 17:20:11.296" critical="yes" starttime="20140912 17:20:09.199">ValueError: Element locator 'username_field' did not match any elements.</status>
+</test>
+<doc>A test suite with a single test for valid login. This test has
+a workflow that is created using keywords from the resource file.</doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140912 17:20:11.297" starttime="20140912 17:20:09.196"></status>
+</suite>
+<suite source="/Users/boyone/workspaces/robot/tpse2014/valid_login.txt" id="s1-s6" name="Valid Login">
+<test id="s1-s6-t1" name="Login Success">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>localhost:7272/html/</arg>
+</arguments>
+<msg timestamp="20140912 17:20:11.301" level="INFO">Opening browser 'firefox' to base url 'localhost:7272/html/'</msg>
+<status status="PASS" endtime="20140912 17:20:13.188" starttime="20140912 17:20:11.300"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username_field</arg>
+<arg>demo</arg>
+</arguments>
+<msg timestamp="20140912 17:20:13.188" level="INFO">Typing text 'demo' into text field 'username_field'</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140912 17:20:13.334" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140912 17:20:13.334" starttime="20140912 17:20:13.197"></status>
+</kw>
+<msg timestamp="20140912 17:20:13.334" level="FAIL">ValueError: Element locator 'username_field' did not match any elements.</msg>
+<status status="FAIL" endtime="20140912 17:20:13.334" starttime="20140912 17:20:13.188"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140912 17:20:13.334" critical="yes" starttime="20140912 17:20:11.300">ValueError: Element locator 'username_field' did not match any elements.</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140912 17:20:13.335" starttime="20140912 17:20:11.297"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140912 17:20:13.336" starttime="20140912 17:18:42.260"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="6">Critical Tests</stat>
+<stat fail="2" pass="6">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="2" pass="6" id="s1" name="Tpse2014">Tpse2014</stat>
+<stat fail="0" pass="2" id="s1-s1" name="Search Keywords">Tpse2014.Search Keywords</stat>
+<stat fail="0" pass="1" id="s1-s2" name="Search Page">Tpse2014.Search Page</stat>
+<stat fail="0" pass="2" id="s1-s3" name="Search Pages">Tpse2014.Search Pages</stat>
+<stat fail="0" pass="1" id="s1-s4" name="Search Template">Tpse2014.Search Template</stat>
+<stat fail="1" pass="0" id="s1-s5" name="Template">Tpse2014.Template</stat>
+<stat fail="1" pass="0" id="s1-s6" name="Valid Login">Tpse2014.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

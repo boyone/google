@@ -1,0 +1,21 @@
+*** Settings ***
+
+Documentation  A test suite with a single test for valid login. This test has
+...            a workflow that is created using keywords from the resource file.
+Library        Selenium2Library
+
+
+*** Test Cases ***
+Valid Login Acceptance Rule
+	[Template]  Valid Login
+	demo     mode
+
+*** Keywords ***
+Valid Login
+	[Arguments]    ${username}    ${password}
+    Open Browser    http://localhost:7272/html
+    Input Text  username_field    ${username}
+    Input Text  password_field    ${password}
+    Click Button  login_button
+    Title Should Be  Welcome Page
+    [Teardown]  Close Browser

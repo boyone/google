@@ -1,0 +1,11 @@
+*** Settings ***
+Library    Selenium2Library
+
+*** Test Cases ***
+Login Success	
+	Open Browser	localhost:7272/html/
+	Input Text		username_field		demo
+	Input Text		password_field		mode
+	Click Button	login_button
+	Page Should Contain		Welcome Page	 
+	Close Browser

@@ -1,0 +1,27 @@
+*** Settings ***
+Library    Selenium2Library
+
+*** Test Cases ***
+Search Sprint3r
+	[Template]    Search Page
+	
+	# keyword          expected_result
+	siam chamnankit    sprint3r.com
+	sprint3r           SPRINT3R [n.] (ซพรินเทอร์)
+
+*** Keywords ***
+Search Page
+	[Arguments]    ${keyword}     ${expected_result}
+	Open Browser    https://www.google.com    gc
+    Search By Keyword    ${keyword} 
+    Result Page Should Contain    ${expected_result}
+    Close Browser
+
+Search By Keyword
+    [Arguments]    ${keyword}
+    Input Text    gbqfq    ${keyword}
+    Click Button    gbqfb
+
+Result Page Should Contain
+    [Arguments]    ${expected_result}
+    Wait Until Page Contains    ${expected_result}

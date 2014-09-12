@@ -1,0 +1,17 @@
+*** Settings ***
+Library    Selenium2Library
+
+*** Test Cases ***
+Search Siam-Chamnankit
+    Open Browser    https://www.google.com    gc
+    Input Text    gbqfq    siam chamnankit
+    Click Button    gbqfb    
+    Wait Until Page Contains    sprint3r.com
+    Close Browser
+
+Search Sprint3r
+    Open Browser    https://www.google.com    gc
+    Input Text    gbqfq    sprint3r
+    Click Button    gbqfb    
+    Wait Until Page Contains    SPRINT3R [n.] (ซพรินเทอร์)
+    Close Browser
