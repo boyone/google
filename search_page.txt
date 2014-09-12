@@ -6,5 +6,5 @@ Search Siam-Chamnankit
     Open Browser    https://www.google.com
 	Input Text    gbqfq    siam chamnankit
     Click Button    gbqfb    
-    Wait Until Page Contains    sprint3r.com
+    Wait Until Page Contains    sprint333333r.com
     Close Browser
